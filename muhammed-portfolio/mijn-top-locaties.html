@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mijn Top Locaties | Mijn Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="custom-header">
+    <div class="custom-container">
+      <a href="index.html">
+        <img src="assets/images/logos/logo.png" alt="Mijn Logo" class="logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button type="button" class="active dropdown-toggle">Portfolio</button>
+          <div class="dropdown-menu">
+            <a href="over-mij.html">Over mij</a>
+            <a href="vaardigheden.html">Vaardigheden</a>
+            <a href="mijn-profielen.html">Mijn Profielen</a>
+            <a href="netwinkel.html">NetWinkel</a>
+            <a href="afrekenen.html">Afrekenen</a>
+            <a href="mijn-top-locaties.html" class="active">Mijn Top Locaties</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="top-locaties py-5">
+      <div class="container">
+        <h1 class="section-title text-center">Mijn Top Locaties</h1>
+        <p class="section-subtitle text-center">
+          Ontdek mijn favoriete plekken in België. Hover over de kaarten om de locaties te zien.
+        </p>
+
+        <div class="row">
+          <!-- Locatie 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="location-card">
+              <figure>
+                <img src="assets/images/belgium-1506212_1280.jpg" class="location-img" alt="Groenplaats Antwerpen" />
+                <figcaption>
+                  Foto: <a href="https://pixabay.com/photos/belgium-antwerp-groenplaats-1506212/" target="_blank" rel="noopener noreferrer">Pixabay</a>
+                </figcaption>
+              </figure>
+              <div id="mapGroenplaats" class="location-map"></div>
+              <div class="location-info">
+                <h4>Plaats die je moet bezoeken: Groenplaats Antwerpen</h4>
+                <p>Het bruisende hart van Antwerpen met prachtige historische gebouwen en gezellige cafés.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Locatie 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="location-card">
+              <figure>
+                <img src="assets/images/happy-holidays-3040029_1280.jpg" class="location-img" alt="Antwerpen Meir" />
+                <figcaption>
+                  Foto: <a href="https://pixabay.com/photos/happy-holidays-3040029/" target="_blank" rel="noopener noreferrer">Pixabay</a>
+                </figcaption>
+              </figure>
+              <div id="mapMeir" class="location-map"></div>
+              <div class="location-info">
+                <h4>Mijn favoriete winkelplek in België: Antwerpen Meir</h4>
+                <p>Bekend als de belangrijkste winkelstraat van Antwerpen, vol met winkels en levendige sfeer.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Locatie 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="location-card">
+              <figure>
+                <img src="assets/images/brugge-5278796_1280.jpg" class="location-img" alt="Brugge" />
+                <figcaption>
+                  Foto: <a href="https://pixabay.com/photos/bruges-belgium-city-5278796/" target="_blank" rel="noopener noreferrer">Pixabay</a>
+                </figcaption>
+              </figure>
+              <div id="mapBrugge" class="location-map"></div>
+              <div class="location-info">
+                <h4>Mijn favoriete stad: Brugge</h4>
+                <p>Iconische middeleeuwse stad met prachtige architectuur en grachten.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Locatie 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="location-card">
+              <figure>
+                <img src="assets/images/dinant-4582864_1280.jpg" class="location-img" alt="Dinant" />
+                <figcaption>
+                  Foto: <a href="https://pixabay.com/photos/dinant-belgium-river-4582864/" target="_blank" rel="noopener noreferrer">Pixabay</a>
+                </figcaption>
+              </figure>
+              <div id="mapDinant" class="location-map"></div>
+              <div class="location-info">
+                <h4>Mijn favoriete uitzicht: Dinant</h4>
+                <p>Mooie stad aan de Maas met indrukwekkende rotsen en citadel.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Locatie 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="location-card">
+              <figure>
+                <img src="assets/images/lasagna-5994612_1280.jpg" class="location-img" alt="The Lobster House" />
+                <figcaption>
+                  Foto: <a href="https://pixabay.com/photos/lasagna-food-italian-5994612/" target="_blank" rel="noopener noreferrer">Pixabay</a>
+                </figcaption>
+              </figure>
+              <div id="mapLobsterHouse" class="location-map"></div>
+              <div class="location-info">
+                <h4>Mijn favoriete restaurant: The Lobster House</h4>
+                <p>Populair restaurant gespecialiseerd in zeevruchten en heerlijke gerechten.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Locatie 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="location-card">
+              <figure>
+                <img src="assets/images/coffee-2560260_1280.jpg" class="location-img" alt="Mado Restaurant" />
+                <figcaption>
+                  Foto: <a href="https://pixabay.com/photos/coffee-cup-cafe-restaurant-2560260/" target="_blank" rel="noopener noreferrer">Pixabay</a>
+                </figcaption>
+              </figure>
+              <div id="mapMado" class="location-map"></div>
+              <div class="location-info">
+                <h4>Mijn favoriete café: Mado Restaurant</h4>
+                <p>Gezellig restaurant bekend om zijn gastvrijheid en heerlijke gerechten.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-3">&copy; <span id="huidigJaar"></span> | Muhammed Ozasik</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/muhammedozasik/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/MuhammedOzasik" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="mailto:muhammedozasik@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Custom CSS -->
+  <script src="js/scripts.js" defer></script>
+  <script src="js/top-locaties.js" defer></script>
+</body>
+
+</html>
